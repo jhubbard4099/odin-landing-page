@@ -6,14 +6,25 @@
 
 body {
   font-family: Roboto, sans-serif;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
 }
 
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .content-opener {
-  background-color: #1F2937;
+  background: #1F2937;
   color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
 }
 .opener-text-main {
   color: #F9FAF8;
@@ -21,27 +32,60 @@ body {
   font-weight: 900;
 }
 .opener-text-body, .opener-text-image {
-  color: #FFFFFF;
+  color: #E5E7EB;
   font-size: 18px;
   font-weight: normal;
 }
+.opener-right {
+  background: #595b61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .content-info {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   color: #1F2937;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .info-text-main {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
 }
 .info-text-card {
   font-size: 18px;
   font-weight: normal;
 }
+.info-cards {
+  display: flex;
+  text-align: center;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-image-box {
+  width: 200px;
+  height: 200px;
+  border: solid;
+  border-radius: 10px;
+  border-color: #3882F6;
+}
 
 .content-quote {
-  background-color: #E5E7EB;
+  background: #E5E7EB;
   color: #1F2937;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .quote-text-body {
   font-size: 36px;
@@ -51,13 +95,17 @@ body {
 .quote-text-author {
   font-size: 24px;
   font-weight: 900;
+
+  align-self: flex-end;
 }
 
 .content-action {
-  background-color: #3882F6;
+  background: #FFFFFF;
   color: #FFFFFF;
+
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .action-text-main {
   font-size: 24px;
@@ -67,32 +115,51 @@ body {
   font-size: 18px;
   font-weight: normal;
 }
+.action-box {
+  background: #3882F6;
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+}
+.action-button {
+  border: solid;
+  border-width: 1px;
+}
 
 .header, .footer {
-  background-color: #1F2937;
+  background: #1F2937;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: normal;
 
   display: flex;
   align-items: center;
+}
+.header {
+  height: 48px;
   justify-content: space-between;
-  padding: 16px;
 }
 .header-left {
   font-size: 24px;
   font-weight: 900;
   color: #F9FAF8;
 }
-
 .header-right {
   display: flex;
   gap: 16px;
 }
+.footer {
+  height: 80px;
+  justify-content: center;
+}
 
 button {
-  background-color: #3882F6;
-  color: #FFFFFF
+  background: #3882F6;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
 }
 
 ul {
